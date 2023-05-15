@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio-Journey: Visual+LLM-aided Audio Encodec Diffusion </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Anonymous Submission: Audio-Journey</h1>
+        <p>This repository contains the anonymous submission of our work titled "Audio-Journey: Visual+LLM-aided Audio Encodec Diffusion".</p>
+
+        <h2>Abstract</h2>
+        <p>Despite recent progress, machine learning for the audio domain is limited by the availability of high-quality data.
+Visual information already presented in the video should complement the information in audio.
+% In this paper, we provide a sober look at recent progress in the field and identify the issue of audio-visual false positives, where the visual content is completely unrelated to the audio content. 
+In this paper, we leverage SOTA Large Language Models (LLMs) to augment the existing weak labels of the audio dataset to enrich captions; we leveraged SOTA video-captioning model to automatically generate video caption, and we again use LLMs to merge the audio-visual captions to form a rich dataset of large-scale.
+% To address such issues, we propose caption filtering, which leverages LLMs to ``gate" the information from the audio modality only when there is likely to be a matching video or text. 
+Using this dataset, we train a latent diffusion model on the decoder embeddings.
+Furthermore, we leverage the trained diffusion model to generate even more audio data of the same format.
+In our experiment, we first verified that our Audio+Visual Caption is of high quality against baselins and ground truth (x\% gain in semantic score against baselines). 
+Moreover, we demonstrate we could train a classifier from scratch using the diffusion-generated data, or use diffusion to enhance classification models on the AudioSet test set, outperforming mixup by 2\%.
+We also demonstrate the zero-shot clssification capability of diffusion model (y\% mAP).
+Our approach exemplifies a promising method for augmenting low-resource audio datasets.
+The samples, models, and implementation will be at this site.</a></p>
+
+        <h2>Code</h2>
+        <p>The supporting code for our work is available in the repository.</p>
+
+        <h3>Dependencies</h3>
+        <p>Please check the README file for instructions on how to set up the necessary dependencies to run the code.</p>
+
+        <h2>Contact</h2>
+        <p>For any issues related to the code or the project, please raise an issue on this GitHub repository.</p>
+
+        <h2>Note</h2>
+        <p>The authors of this work are keeping their identity hidden as part of the anonymous submission process.</p>
+    </div>
+</body>
+</html>
