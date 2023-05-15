@@ -1,4 +1,8 @@
-### Hi there 👋
+### Audio-Journey: Visual+LLM-aided Audio Encodec Diffusion  
+
+## Abstract
+
+*Here, write the abstract of your paper.* 👋
 
 <!--
 **AudioJourney/AudioJourney** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
