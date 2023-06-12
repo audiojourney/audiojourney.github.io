@@ -12,6 +12,18 @@
             margin: 0 auto;
             max-width: 800px;
         }
+        .grid-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 20px;
+        }
+        .grid-item {
+          text-align: center;
+        }
+        audio {
+          width: 100%;
+          margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -39,7 +51,39 @@ The samples, models, and implementation will be at this site.</a></p>
         <h2>Examples</h2>
         <p>Visit the Audio Journey project on GitHub:</p>
         <a href="https://github.com/audiojourney/audiojourney.github.io">Audio Journey on GitHub</a>
-<!--         <audio controls="controls">
+    
+      <div class="grid-container">
+    <div class="grid-item">
+      <audio controls>
+        <source src="https://github.com/audiojourney/audiojourney.github.io/blob/main/examples/sound_of_a_hammer_striking_wood.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p>Sound of a hammer striking wood</p>
+    </div>
+    <div class="grid-item">
+      <audio controls>
+        <source src="https://github.com/audiojourney/audiojourney.github.io/blob/main/examples/sound_of_a_dog_howling.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p>sound of a dog howling</p>
+    </div>
+    <div class="grid-item">
+      <audio controls>
+        <source src="https://github.com/audiojourney/audiojourney.github.io/blob/main/examples/sound_of_a_person_gargling.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p>sound of a person gargling</p>
+    </div>
+    <div class="grid-item">
+      <audio controls>
+        <source src="https://github.com/audiojourney/audiojourney.github.io/blob/main/examples/sound_of_shuffling_cards_6_11.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p>sound of shuffling cards</p>
+    </div>
+  </div>
+<!--     
+        <audio controls="controls">
           <source src="https://github.com/audiojourney/audiojourney.github.io/raw/main/sound_of_a_person_gargling.wav" autoplay="">
           Your browser does not support the audio element.
         </audio> -->
