@@ -19,10 +19,20 @@
         }
         .grid-item {
           text-align: center;
+          display: flex;
+          flex-direction: column;
         }
+        
+        .grid-item p {
+          flex: 0 0 auto;
+          height: 60px; /* You can adjust this value depending on your needs */
+          overflow: hidden;
+        }
+        
         audio {
           width: 100%;
           margin-bottom: 10px;
+          flex: 1 0 auto;
         }
     </style>
 </head>
@@ -73,7 +83,7 @@ The samples, models, and implementation will be at this site.</a></p>
         </audio>
     </div>
     <div class="grid-item">
-      <p>Sound of a progressive rock followed by a band playing music</p>
+      <p>Progressive rock followed by a band playing music</p>
       <audio controls="controls">
         <source src="https://github.com/audiojourney/audiojourney.github.io/raw/main/examples/Playing-_The_sound_of_Progressive_rock_followed_by_a_band_performs_while_people_are_talking_during_a_concert._.wav" autoplay="" type="audio/wav">
         Your browser does not support the audio element.
