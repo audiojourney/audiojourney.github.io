@@ -42,18 +42,7 @@
         <p>This repository contains the anonymous submission of our work titled "Audio-Journey: Open Domain Latent Diffusion Based Text-to-Audio Generation".</p>
 
         <h2>Abstract</h2>
-        <p>Despite recent progress, machine learning for the audio domain is limited by the availability of high-quality data.
-Visual information already presented in the video should complement the information in audio.
-% In this paper, we provide a sober look at recent progress in the field and identify the issue of audio-visual false positives, where the visual content is completely unrelated to the audio content. 
-In this paper, we leverage SOTA Large Language Models (LLMs) to augment the existing weak labels of the audio dataset to enrich captions; we leveraged SOTA video-captioning model to automatically generate video caption, and we again use LLMs to merge the audio-visual captions to form a rich dataset of large-scale.
-% To address such issues, we propose caption filtering, which leverages LLMs to ``gate" the information from the audio modality only when there is likely to be a matching video or text. 
-Using this dataset, we train a latent diffusion model on the decoder embeddings.
-Furthermore, we leverage the trained diffusion model to generate even more audio data of the same format.
-In our experiment, we first verified that our Audio+Visual Caption is of high quality against baselins and ground truth (x\% gain in semantic score against baselines). 
-Moreover, we demonstrate we could train a classifier from scratch using the diffusion-generated data, or use diffusion to enhance classification models on the AudioSet test set, outperforming mixup by 2\%.
-We also demonstrate the zero-shot clssification capability of diffusion model (y% mAP).
-Our approach exemplifies a promising method for augmenting low-resource audio datasets.
-The samples, models, and implementation will be at this site.</a></p>
+        <p>Despite recent progress, machine learning for open domain audio generation is lagging behind models for image, text, speech, and music. In this paper, we leverage state-of-the-art (SOTA) Large Language Models (LLMs) to augment the existing weak labels of the audio dataset to enrich captions; we adopt SOTA video-captioning model to automatically generate video caption, and we again use LLMs to merge the audio-visual captions to form a rich dataset of large-scale. In our experiment, we first verified that our Audio+Visual Caption is of high quality against baselines and ground truth (12.5\% gain in semantic score against baselines). Using this dataset we constructed a Latent Diffusion Model to generate in the encodec encoding latent space. Our model is novel in the current SOTA audio generation landscape due to our generation space, text encoder, noise schedule, and attention mechanism functioning together to provide competitive open domain audio generation.</a></p>
 
         <h2>Code</h2>
         <p>The supporting code for our work is available in the repository.</p>
