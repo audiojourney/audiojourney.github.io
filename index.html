@@ -34,6 +34,16 @@
           margin-bottom: 10px;
           flex: 1 0 auto;
         }
+        .examples-container {
+            display: flex;
+            justify-content: space-between; /* This will space out the examples evenly */
+        }
+        
+        .example {
+            flex: 1;
+            text-align: center; /* This will center the title and the link in each example */
+            margin: 0 10px; /* Optional: gives some margin between examples */
+        }
     </style>
 </head>
 <body>
@@ -48,12 +58,21 @@
         <p>The supporting code for our work is available in the repository.</p>
     
         <h2>Examples</h2>
-        <p>Visit the Audio Journey project on GitHub:</p>
-        <a href="https://github.com/audiojourney/audiojourney.github.io">Audio Journey on GitHub</a>
-        <p>Read our preprint: </p>
-        <a href="https://github.com/audiojourney/audiojourney.github.io/blob/main/Audio_Journey_Model_Paper.pdf">Audio Journey Preprint</a>
-        <p>Read our Appendix: </p>
-        <a href="https://github.com/audiojourney/audiojourney.github.io/blob/main/Audio_Journey_Model_Paper_appendix.pdf">Audio Journey Appendix</a>
+        
+        <div class="examples-container">
+            <div class="example">
+                <p>Visit the Audio Journey project on GitHub:</p>
+                <a href="https://github.com/audiojourney/audiojourney.github.io">Audio Journey on GitHub</a>
+            </div>
+            <div class="example">
+                <p>Read our preprint:</p>
+                <a href="https://github.com/audiojourney/audiojourney.github.io/blob/main/Audio_Journey_Model_Paper.pdf">Audio Journey Preprint</a>
+            </div>
+            <div class="example">
+                <p>Read our Appendix:</p>
+                <a href="https://github.com/audiojourney/audiojourney.github.io/blob/main/Audio_Journey_Model_Paper_appendix.pdf">Audio Journey Appendix</a>
+            </div>
+        </div>
     
       <div class="grid-container">
     <div class="grid-item">
